@@ -6,8 +6,8 @@ namespace TravelApi.Domain.Entity;
 public class Segment 
 {
     private Segment() { }
-    public Guid Id { get; private set; }
-    public Guid TripId { get; private set; }
+    public SegmentId Id { get; private set; }
+    public TripId TripId { get; private set; }
     public ESegmentType SegmentType { get; private set; }
     public string SupplierCode { get; private set; }
     public string Origin { get; private set; }
@@ -18,7 +18,7 @@ public class Segment
     public string BookingClass { get; private set; }
 
     public static Segment Create(
-        Guid tripId,
+        TripId tripId,
         ESegmentType segmentType,
         string supplierCode,
         string origin,
@@ -29,7 +29,7 @@ public class Segment
         string bookingClass)
         => new()
         {
-            Id = Guid.NewGuid(),
+            Id = new SegmentId(Guid.NewGuid()),
             TripId = tripId,
             SegmentType = segmentType,
             SupplierCode = supplierCode,
