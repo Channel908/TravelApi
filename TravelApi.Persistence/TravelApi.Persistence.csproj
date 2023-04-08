@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TravelApi.Domain\TravelApi.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
