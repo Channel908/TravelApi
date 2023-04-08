@@ -4,7 +4,7 @@ using TravelApi.Domain.Common;
 namespace TravelApi.Domain.Entity;
 public class Customer
 {
-    public Customer() { }
+    private Customer() { }
 
     public Guid Id { get; private set; }
     public string? Title { get; private set; } = null;
