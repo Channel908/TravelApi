@@ -32,6 +32,13 @@ internal class SegmentConfiguration : IEntityTypeConfiguration<Segment>
              .Property(x => x.BookingClass)
             .HasMaxLength(1);
 
+        builder
+            .HasOne<Trip>()
+            .WithMany()
+            .HasForeignKey(x => x.TripId);
+
+     
+
 
     }
 }

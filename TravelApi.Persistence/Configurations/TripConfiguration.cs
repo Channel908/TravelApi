@@ -20,5 +20,16 @@ internal class TripConfiguration : IEntityTypeConfiguration<Trip>
         builder
             .Property(x => x.TripName)
             .HasMaxLength(50);
+
+        builder
+            .HasOne<Customer>()
+            .WithMany()
+            .HasForeignKey(x => x.CustomerId)
+            .IsRequired();
+
+        builder
+            .HasMany(x => x.Segments)
+            .WithOne()
+            .HasForeignKey(x => x.TripId);
     }
 }
