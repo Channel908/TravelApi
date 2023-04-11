@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B5DAB12-B62
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApi.Domain", "TravelApi.Domain\TravelApi.Domain.csproj", "{3DC4D3E5-4887-45AC-B504-D09147F483B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApi.Persistence", "TravelApi.Persistence\TravelApi.Persistence.csproj", "{F84808CB-7E35-450D-9BE6-2F8843FE1891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApi.Persistence", "TravelApi.Persistence\TravelApi.Persistence.csproj", "{F84808CB-7E35-450D-9BE6-2F8843FE1891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApi.WebService", "TravelApi.WebService\TravelApi.WebService.csproj", "{A78D4513-BA3F-4203-BC9C-2D4EDCA68972}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{F84808CB-7E35-450D-9BE6-2F8843FE1891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F84808CB-7E35-450D-9BE6-2F8843FE1891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84808CB-7E35-450D-9BE6-2F8843FE1891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78D4513-BA3F-4203-BC9C-2D4EDCA68972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78D4513-BA3F-4203-BC9C-2D4EDCA68972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78D4513-BA3F-4203-BC9C-2D4EDCA68972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78D4513-BA3F-4203-BC9C-2D4EDCA68972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3DC4D3E5-4887-45AC-B504-D09147F483B3} = {1B5DAB12-B624-46E1-8519-E3AEA69249B3}
 		{F84808CB-7E35-450D-9BE6-2F8843FE1891} = {1B5DAB12-B624-46E1-8519-E3AEA69249B3}
+		{A78D4513-BA3F-4203-BC9C-2D4EDCA68972} = {1B5DAB12-B624-46E1-8519-E3AEA69249B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0531D052-8CCA-4716-87B6-1A9F159DA07B}

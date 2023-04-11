@@ -4,11 +4,12 @@ namespace TravelApi.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Your connection string here");
+                optionsBuilder.UseSqlServer("ConnectionString");
             }
         }
 
