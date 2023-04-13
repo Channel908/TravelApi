@@ -1,3 +1,4 @@
+
 using TravelApi.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
