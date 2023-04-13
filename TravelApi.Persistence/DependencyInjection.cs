@@ -12,6 +12,6 @@ public static class DependencyInjection
         => services.AddDbContext<ApplicationDbContext>(
             options => options.UseSqlServer(config.GetConnectionString("Default"))
             )
-             .AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>))
-             .AddScoped<ICustomerRepository, CustomerRepository>();
+            .AddScoped(typeof(IRepository<>), typeof(Repository<>))
+            .AddScoped<ICustomerRepository, CustomerRepository>();
 }
