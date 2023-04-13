@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TravelApi.Application\TravelApi.Application.csproj" />
     <ProjectReference Include="..\TravelApi.Domain\TravelApi.Domain.csproj" />
   </ItemGroup>
 

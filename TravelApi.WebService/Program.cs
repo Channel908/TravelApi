@@ -1,4 +1,11 @@
+using TravelApi.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+
+services
+    .AddPersistence(builder.Configuration);
+
 
 // Add services to the container.
 
